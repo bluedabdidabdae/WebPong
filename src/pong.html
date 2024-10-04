@@ -1,0 +1,98 @@
+<!--
+
+    Web implementation of the pong game
+    Copyright (C) 2024  blue_dabdidabdae
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+!-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Pong_game</title>
+	<link rel="stylesheet" href="pong_style.css">
+</head>
+<body onkeydown="premi(event)">
+    <div class="center">
+        <canvas id="myCanvas" width="1200" height="800"></canvas>
+        <div class="scores">
+            <div id="playerOne"></div>
+            <div id="playerTwo"></div>
+        </div>
+        <div id="counter">3</div>
+    </div>
+</body>
+
+</html>
+
+<script src="pong_script.js"></script>
+
+<style>
+    @font-face {
+        font-family: 'Nippo-Bold';
+        src: url('fonts/Nippo-Bold.woff2') format('woff2'),
+        url('fonts/Nippo-Bold.woff') format('woff'),
+        url('fonts/Nippo-Bold.ttf') format('truetype');
+        font-weight: 700;
+        font-display: swap;
+        font-style: normal;
+    }
+    #myCanvas{
+        background-color: gray;
+    }
+    body{
+        background-color: black;
+    }
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* border: 1px solid red; */
+        width: auto;
+        height: auto;
+    }
+    .scores{
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        display: flex;
+        width: 1200px;
+        /* border: 1px solid red; */
+    }
+    .scores div{
+        font-family: 'Nippo-Bold';
+        font-size: 100px;
+        /* border: 1px solid greenyellow; */
+        width: 100%;
+        text-align: center;
+    }
+    #playerOne{
+        align-self: center;
+    }
+    #counter{
+        font-family: 'Nippo-Bold';
+        font-size: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
