@@ -13,6 +13,9 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
+    Custom font is provided by <https://fontshare.com>
+    at <https://fontshare.com/fonts/nippo>.
+
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
@@ -42,57 +45,3 @@
 </html>
 
 <script src="pong_script.js"></script>
-
-<style>
-    @font-face {
-        font-family: 'Nippo-Bold';
-        src: url('fonts/Nippo-Bold.woff2') format('woff2'),
-        url('fonts/Nippo-Bold.woff') format('woff'),
-        url('fonts/Nippo-Bold.ttf') format('truetype');
-        font-weight: 700;
-        font-display: swap;
-        font-style: normal;
-    }
-    #myCanvas{
-        background-color: gray;
-    }
-    body{
-        background-color: black;
-    }
-    .center{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        /* border: 1px solid red; */
-        width: auto;
-        height: auto;
-    }
-    .scores{
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translate(-50%, -0%);
-        display: flex;
-        width: 1200px;
-        /* border: 1px solid red; */
-    }
-    .scores div{
-        font-family: 'Nippo-Bold';
-        font-size: 100px;
-        /* border: 1px solid greenyellow; */
-        width: 100%;
-        text-align: center;
-    }
-    #playerOne{
-        align-self: center;
-    }
-    #counter{
-        font-family: 'Nippo-Bold';
-        font-size: 300px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-</style>
